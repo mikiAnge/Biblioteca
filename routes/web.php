@@ -14,3 +14,27 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/index', function () {
+    return view('index');
+});
+
+Route::get('/inicio', function () {
+    return view('inicio');
+});
+
+Route::get('/book', function () {
+    return view('book');
+});
+
+Route::get('/prestamo', function () {
+    return view('prestamo');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
